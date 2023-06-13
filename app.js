@@ -46,4 +46,11 @@ if (e.target.classList.contains("ac")) {
 
 const sayiyiAl = (num) => {
     if (num == "0" && altSatir === "0") return;
+    if (num !== "." && altSatir === "0") {
+        altSatir = num;
+        return;
+    }
+    if (num == "." && altSatir.includes(".")) return;
+    if (altSatir.length > 10) return;
+    altSatir += num;
 }
