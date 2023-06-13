@@ -43,3 +43,7 @@ if (e.target.classList.contains("ac")) {
     yazdirilanAlan();
 }
 });
+
+const sayiyiAl = (num) => {
+    if (num == "0" && altSatir === "0") return;
+}
